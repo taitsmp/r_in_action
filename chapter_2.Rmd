@@ -33,7 +33,7 @@ m3d <- matrix(1:24, c(2,4,3)) #this doesn't work. Matrices are 2d
 
 ```{r}
 a1 <- array(1:25)
-a3d <- array(1:24, c(2,4,3))
+a3d <- array(1:24, c(2,4,3)) #this works just fine. 
 ```
 
 
