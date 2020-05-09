@@ -1,0 +1,47 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+### Messing with Data types
+
+
+I'm trying to learn how notebooks and markdown are treated differently in RStudio (if at all).
+
+* https://blog.rstudio.com/2016/10/05/r-notebooks/
+
+### Data Frames
+
+```{r}
+patientID <- c(1, 2, 3, 4)
+age <- c(24, 45, 65, 40)
+diabetes <- c("Type1", "Type2","Type1", "Type2")
+status <- c("Poor", "Improved", "Excellent", "Poor")
+patientdata <- data.frame(patientID, age, diabetes, status)
+```
+
+### Matrices
+
+```{r}
+
+m1 <- matrix(1:25)
+m3d <- matrix(1:24, c(2,4,3)) #this doesn't work. Matrices are 2d
+```
+
+### Arrays
+
+
+```{r}
+a1 <- array(1:25)
+a3d <- array(1:24, c(2,4,3))
+```
+
+
+### How to use Notebooks / Mardown
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
