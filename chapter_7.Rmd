@@ -1,0 +1,48 @@
+---
+title: "Chapter 7 - Basic Statistics"
+output: html_notebook
+---
+
+```{r install}
+install.packages(c("Hmisc", "pastecs", "psych"))
+
+```
+
+
+```{r load}
+#laod built in dataset.
+data(mtcars)
+library(Hmisc)
+library(psych)
+library(pastecs)
+```
+
+
+```{r}
+myvars <- c("mpg", "hp", "wt")
+head(mtcars[myvars])
+```
+
+```{r}
+summary(mtcars[myvars])
+```
+
+```{r}
+mystats <- function(x, na.omit=FALSE) {
+  if(na.omit)
+    x <- x[!is.na(x)]
+  m <- mean(x)
+  n <- length(x)
+  s <- sd(x)
+  return(c(n=n, mean=m, stdev=s))
+}
+
+sapply( mtcars[myvars], mystats)
+```
+
+```{r}
+#from Hmisc - seeing messages it's "masked"
+Hmisc::describe(mtcars[myvars])
+```
+
+ 
