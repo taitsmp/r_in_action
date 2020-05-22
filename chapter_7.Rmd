@@ -45,4 +45,18 @@ sapply( mtcars[myvars], mystats)
 Hmisc::describe(mtcars[myvars])
 ```
 
+### Summary stats by group
+
+Reminds me of "GROUP BY" in SQL. 
+
+```{r}
+dstats <- function(x) sapply(x, mystats)
+by(mtcars[myvars], mtcars$am, dstats)
+```
+
+```{r}
+dstats <- function(x) sapply(x, mystats, na.omit=TRUE)
+by(mtcars[myvars], list(Transmission=mtcars$am, Engine=mtcars$vs), FUN=dstats)
+```
+
  
