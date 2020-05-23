@@ -1,0 +1,39 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Chapter 6
+
+```{r load}
+library(ggplot2)
+```
+
+
+```{r}
+plot(cars)
+```
+
+## Box Plot
+
+```{r}
+ggplot(mtcars, aes(x="", y=mpg)) +
+  geom_boxplot() +
+  labs(y="Miles Per Gallon", x="", title="Box Plot")
+```
+
+#### Old school boxplot
+
+This style of boxplot was used in [Statistics for Genomic Data Science](http://jtleek.com/genstats/inst/doc/01_10_exploratory-analysis.html)
+
+```{r}
+boxplot(mtcars$mpg, col=2, range=0)
+```
+
+
+## Density Plot
+
+```{r}
+
+```
+
