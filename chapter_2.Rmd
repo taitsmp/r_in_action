@@ -22,6 +22,8 @@ patientdata <- data.frame(patientID, age, diabetes, status)
 
 ### Matrices
 
+Matrices are 2D
+
 ```{r}
 
 m1 <- matrix(1:25)
@@ -30,10 +32,27 @@ m3d <- matrix(1:24, c(2,4,3)) #this doesn't work. Matrices are 2d
 
 ### Arrays
 
+Arrays are whatever dimensions you want. 
 
 ```{r}
 a1 <- array(1:25)
-a3d <- array(1:24, c(2,4,3)) #this works just fine. 
+a3d <- array(1:24, c(2,4,3)) #this works just fine. Arrays are whatever dim you want. 
+```
+
+### "with" and "attach" commands
+
+```{r with_command}
+with(mtcars, {
+  plot(mpg, wt)  #no need to use mtcars$mpg or mtcars$wt
+})
+```
+
+"attach" and "detach" work similarly to "with"
+
+```{r attach_command}
+attach(mtcars)
+plot(mpg, wt) 
+detach(mtcars)
 ```
 
 
