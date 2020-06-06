@@ -59,4 +59,14 @@ dstats <- function(x) sapply(x, mystats, na.omit=TRUE)
 by(mtcars[myvars], list(Transmission=mtcars$am, Engine=mtcars$vs), FUN=dstats)
 ```
 
+### More experimenting with sapply
+
+```{r}
+justthemean <- function(x, na.omit=FALSE) {
+  mean(x) #last expression automatically returned.
+}
+
+mn <- sapply(mtcars, justthemean, na.omit=TRUE) #will return a vector. 
+```
+
  

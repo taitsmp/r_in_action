@@ -34,6 +34,16 @@ boxplot(mtcars$mpg, col=2, range=0)
 ## Density Plot
 
 ```{r}
+data(mpg)
+cars08 <- mpg[mpg$year == 2008, ]
+ggplot(cars08, aes(x=cty)) + geom_density() + labs(title = "Default kernel density plot")
+```
 
+```{r}
+ggplot(cars08, aes(x=cty, y=..density..)) + 
+  geom_histogram(bins=20, color="white", fill="steelblue") + 
+  scale_y_continuous(labels=scales::percent) +
+  geom_density(color="red", size=1) + 
+  labs(title = "Colored Histogram") + labs(x="City MPG", y="Percent")
 ```
 
