@@ -4,7 +4,7 @@ output: html_notebook
 ---
 
 ```{r install}
-install.packages(c("Hmisc", "pastecs", "psych"))
+install.packages(c("Hmisc", "pastecs", "psych", "carData"))
 
 ```
 
@@ -69,4 +69,24 @@ justthemean <- function(x, na.omit=FALSE) {
 mn <- sapply(mtcars, justthemean, na.omit=TRUE) #will return a vector. 
 ```
 
+### Messing with 'summarize'
+
+```{r}
+library(dplyr)
+library(carData)
+```
+
+```{r}
+Salaries %>%
+  summarise(med = median(salary),
+            min = min(salary))
+```
+ 
+```{r}
+Salaries %>%
+  group_by(rank, sex) %>%
+  select(yrs.since.phd, yrs.service) %>%
+  summarize_all(list(mean, max))
+```
+ 
  

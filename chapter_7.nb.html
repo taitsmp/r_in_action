@@ -1751,76 +1751,34 @@ summary {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcyhjKFwiSG1pc2NcIiwgXCJwYXN0ZWNzXCIsIFwicHN5Y2hcIikpXG5gYGAifQ== -->
-<pre class="r"><code>install.packages(c(&quot;Hmisc&quot;, &quot;pastecs&quot;, &quot;psych&quot;))</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcyhjKFwiSG1pc2NcIiwgXCJwYXN0ZWNzXCIsIFwicHN5Y2hcIiwgXCJjYXJEYXRhXCIpKVxuYGBgIn0= -->
+<pre class="r"><code>install.packages(c(&quot;Hmisc&quot;, &quot;pastecs&quot;, &quot;psych&quot;, &quot;carData&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiYWxzbyBpbnN0YWxsaW5nIHRoZSBkZXBlbmRlbmNpZXMg4oCYcG5n4oCZLCDigJhqcGVn4oCZLCDigJhjaGVja21hdGXigJksIOKAmEZvcm11bGHigJksIOKAmGxhdHRpY2VFeHRyYeKAmSwg4oCYYWNlcGFja+KAmSwg4oCYZGF0YS50YWJsZeKAmSwg4oCYaHRtbFRhYmxl4oCZLCDigJhtbm9ybXTigJlcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvcG5nXzAuMS03LnRneidcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24veC1nemlwJyBsZW5ndGggMzY5NTA5IGJ5dGVzICgzNjAgS0IpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZG93bmxvYWRlZCAzNjAgS0JcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvanBlZ18wLjEtOC4xLnRneidcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24veC1nemlwJyBsZW5ndGggNDE2MzQ2IGJ5dGVzICg0MDYgS0IpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZG93bmxvYWRlZCA0MDYgS0JcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvY2hlY2ttYXRlXzIuMC4wLnRneidcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24veC1nemlwJyBsZW5ndGggNjc5MTk3IGJ5dGVzICg2NjMgS0IpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZG93bmxvYWRlZCA2NjMgS0JcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvRm9ybXVsYV8xLjItMy50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDE3Nzc1NCBieXRlcyAoMTczIEtCKVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmRvd25sb2FkZWQgMTczIEtCXG5cbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vbWFjb3N4L2NvbnRyaWIvNC4wL2xhdHRpY2VFeHRyYV8wLjYtMjkudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCAyMjAxMTE2IGJ5dGVzICgyLjEgTUIpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZG93bmxvYWRlZCAyLjEgTUJcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvYWNlcGFja18xLjQuMS50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDgwNTczIGJ5dGVzICg3OCBLQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDc4IEtCXG5cbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vbWFjb3N4L2NvbnRyaWIvNC4wL2RhdGEudGFibGVfMS4xMi44LnRneidcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24veC1nemlwJyBsZW5ndGggMjA3MDg1OSBieXRlcyAoMi4wIE1CKVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmRvd25sb2FkZWQgMi4wIE1CXG5cbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vbWFjb3N4L2NvbnRyaWIvNC4wL2h0bWxUYWJsZV8xLjEzLjMudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCAzMzA3MzAgYnl0ZXMgKDMyMiBLQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDMyMiBLQlxuXG50cnlpbmcgVVJMICdodHRwczovL2NyYW4ucnN0dWRpby5jb20vYmluL21hY29zeC9jb250cmliLzQuMC9tbm9ybXRfMS41LTcudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCAxMTM2ODQgYnl0ZXMgKDExMSBLQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDExMSBLQlxuXG50cnlpbmcgVVJMICdodHRwczovL2NyYW4ucnN0dWRpby5jb20vYmluL21hY29zeC9jb250cmliLzQuMC9IbWlzY180LjQtMC50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDMxMjk4NTUgYnl0ZXMgKDMuMCBNQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDMuMCBNQlxuXG50cnlpbmcgVVJMICdodHRwczovL2NyYW4ucnN0dWRpby5jb20vYmluL21hY29zeC9jb250cmliLzQuMC9wYXN0ZWNzXzEuMy4yMS50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDQ3NzE4MCBieXRlcyAoNDY1IEtCKVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmRvd25sb2FkZWQgNDY1IEtCXG5cbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vbWFjb3N4L2NvbnRyaWIvNC4wL3BzeWNoXzEuOS4xMi4zMS50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDM3ODYzMTIgYnl0ZXMgKDMuNiBNQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDMuNiBNQlxuIn0= -->
-<pre><code>also installing the dependencies ‘png’, ‘jpeg’, ‘checkmate’, ‘Formula’, ‘latticeExtra’, ‘acepack’, ‘data.table’, ‘htmlTable’, ‘mnormt’
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/png_0.1-7.tgz'
-Content type 'application/x-gzip' length 369509 bytes (360 KB)
-==================================================
-downloaded 360 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/jpeg_0.1-8.1.tgz'
-Content type 'application/x-gzip' length 416346 bytes (406 KB)
-==================================================
-downloaded 406 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/checkmate_2.0.0.tgz'
-Content type 'application/x-gzip' length 679197 bytes (663 KB)
-==================================================
-downloaded 663 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/Formula_1.2-3.tgz'
-Content type 'application/x-gzip' length 177754 bytes (173 KB)
-==================================================
-downloaded 173 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/latticeExtra_0.6-29.tgz'
-Content type 'application/x-gzip' length 2201116 bytes (2.1 MB)
-==================================================
-downloaded 2.1 MB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/acepack_1.4.1.tgz'
-Content type 'application/x-gzip' length 80573 bytes (78 KB)
-==================================================
-downloaded 78 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/data.table_1.12.8.tgz'
-Content type 'application/x-gzip' length 2070859 bytes (2.0 MB)
-==================================================
-downloaded 2.0 MB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/htmlTable_1.13.3.tgz'
-Content type 'application/x-gzip' length 330730 bytes (322 KB)
-==================================================
-downloaded 322 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/mnormt_1.5-7.tgz'
-Content type 'application/x-gzip' length 113684 bytes (111 KB)
-==================================================
-downloaded 111 KB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/Hmisc_4.4-0.tgz'
-Content type 'application/x-gzip' length 3129855 bytes (3.0 MB)
+<!-- rnb-output-begin eyJkYXRhIjoidHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvSG1pc2NfNC40LTAudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCAzMTM3OTI3IGJ5dGVzICgzLjAgTUIpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZG93bmxvYWRlZCAzLjAgTUJcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvcGFzdGVjc18xLjMuMjEudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCA0Nzg2NTEgYnl0ZXMgKDQ2NyBLQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDQ2NyBLQlxuXG50cnlpbmcgVVJMICdodHRwczovL2NyYW4ucnN0dWRpby5jb20vYmluL21hY29zeC9jb250cmliLzQuMC9wc3ljaF8xLjkuMTIuMzEudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCAzNzg2MDIyIGJ5dGVzICgzLjYgTUIpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZG93bmxvYWRlZCAzLjYgTUJcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi9tYWNvc3gvY29udHJpYi80LjAvY2FyRGF0YV8zLjAtNC50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDE4MTk1NDkgYnl0ZXMgKDEuNyBNQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDEuNyBNQlxuIn0= -->
+<pre><code>trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/Hmisc_4.4-0.tgz'
+Content type 'application/x-gzip' length 3137927 bytes (3.0 MB)
 ==================================================
 downloaded 3.0 MB
 
 trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/pastecs_1.3.21.tgz'
-Content type 'application/x-gzip' length 477180 bytes (465 KB)
+Content type 'application/x-gzip' length 478651 bytes (467 KB)
 ==================================================
-downloaded 465 KB
+downloaded 467 KB
 
 trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/psych_1.9.12.31.tgz'
-Content type 'application/x-gzip' length 3786312 bytes (3.6 MB)
+Content type 'application/x-gzip' length 3786022 bytes (3.6 MB)
 ==================================================
-downloaded 3.6 MB</code></pre>
+downloaded 3.6 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/carData_3.0-4.tgz'
+Content type 'application/x-gzip' length 1819549 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy93cS93eGY5Mm5kajVkeDYwcTExeXc3N3F2aDgwMDAwZ24vVC8vUnRtcGRGUGZKUS9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy93cS93eGY5Mm5kajVkeDYwcTExeXc3N3F2aDgwMDAwZ24vVC8vUnRtcHJuQTd3QS9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/wq/wxf92ndj5dx60q11yw77qvh80000gn/T//RtmpdFPfJQ/downloaded_packages</code></pre>
+    /var/folders/wq/wxf92ndj5dx60q11yw77qvh80000gn/T//RtmprnA7wA/downloaded_packages</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -2047,10 +2005,60 @@ is.vector(mn)</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="messing-with-summarize" class="section level3">
+<h3>Messing with ‘summarize’</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkoY2FyRGF0YSlcbmBgYCJ9 -->
+<pre class="r"><code>library(dplyr)
+library(carData)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhjYXJEYXRh4oCZIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gNC4wLjJcbiJ9 -->
+<pre><code>package ‘carData’ was built under R version 4.0.2</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU2FsYXJpZXMgJT4lXG4gIHN1bW1hcmlzZShtZWQgPSBtZWRpYW4oc2FsYXJ5KSxcbiAgICAgICAgICAgIG1pbiA9IG1pbihzYWxhcnkpKVxuYGBgIn0= -->
+<pre class="r"><code>Salaries %&gt;%
+  summarise(med = median(salary),
+            min = min(salary))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6MX0sInJkZiI6Ikg0c0lBQUFBQUFBQUExMVBTdzdDSUJDZFV0R1V4RS9pRmR5Mkd6Y2V3SGdBbzBtMzJLSTJWbWhhak43SHkzZ05MMUlkS2pTUkJjT2JON3pIdk8wNlhiS1VBVUFJQTFNcEZxRDczU1plQVF3SU5nRU9Jbk0vY0R4SFlNaHhOd2llaXg3RCsrVUpxT1JYMFNDWWRhSWZHVjVGM3NOQ2VwS29WdmZFeWF5dk9mKytXY2tiNSt0SWxuUE5rMk9OV3V4YVR6SlNsUzZVUkJFeENhZ25EbXFQbU42azJTS1BzL05OWHVLbCtjQnVBLytiOVpqOHZpUWZhMFd0MVZESVV5R0YyNzNrQjFIYVpvSnB1N0JKVlJkU3V5VElOb2xXbXJ0M0xGT2xZN3BzMEg0Qk9hR2h2cmdCQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["med"],"name":[1],"type":["int"],"align":["right"]},{"label":["min"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"107300","2":"57800"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU2FsYXJpZXMgJT4lXG4gIGdyb3VwX2J5KHJhbmssIHNleCkgJT4lXG4gIHNlbGVjdCh5cnMuc2luY2UucGhkLCB5cnMuc2VydmljZSkgJT4lXG4gIHN1bW1hcml6ZV9hbGwobGlzdChtZWFuLCBtYXgpKVxuYGBgIn0= -->
+<pre class="r"><code>Salaries %&gt;%
+  group_by(rank, sex) %&gt;%
+  select(yrs.since.phd, yrs.service) %&gt;%
+  summarize_all(list(mean, max))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQWRkaW5nIG1pc3NpbmcgZ3JvdXBpbmcgdmFyaWFibGVzOiBgcmFua2AsIGBzZXhgXG4ifQ== -->
+<pre><code>Adding missing grouping variables: `rank`, `sex`</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5jb2wiOjYsIm5yb3ciOjZ9LCJyZGYiOiJINHNJQUFBQUFBQUFBMzFTdlM4RVFSU2YyOXM5YnNXM0lLS1JTR2h1NVlnNG9oaUNUaUpDSWhHUnNUZm5OcmMzZTJiWFY2ZlFFZjhEdlpLSVJLM1dhSlFhZjRGQ1liM1puWkc5ODdIWjM3emZ2RGZ2YzJaMVlXUEMzREFSUW1ta2k5V0FCUm5yYTB1NUFrSzZCcHNVR0xKQ0hvRzVHMGdHWkdzc3dSaERrMGpIcUhQTXVQU0F1ajZ3RHBsSGFKdm5mRDlZNFY1SjdyT3c5K3lFUW85NGZTakRkb212SW4zSEx4RTc4RGl3ejRiS3RKOVNoTk5DR1VGVEVaWm9sYmhVSlY0V1BEcVpEdi9MaGRxRUJ2ZWVYYjNkVytlNEIwVWZIcFBTZXIwb3ZGNU00Nm03aU9EWnE0N1RvZWI1Yno5OXEyL3hLZGpDMnUxTDlmYUY0UkhwTjlyMWZ2cHdPWWJ6ZzN1UDhPT3BtZWViNjhvbW1GUnZMUklEZ0R4QWVCWVNkZ0Z4a2YyQVNjQXdZTFp4bEl4VXFScGxSclhPQ2F0SW52YnBrYVNkeDl5M2ZJZloxS3FWaTlzbGxwZUc5c2hBK1lGajA0VDZ4L254MzgrUE45U1U1ZDZocGVvU3pXZ25zSVJoK1BISGRaaEZFaENyeE1FbHZwSzZjRTFlTFhBOEJzRzBiam1ScEhPS055amE5NWxJWHN6WjVYMVd5WW5KbWZMbElGbFFTazQzd1VWS1hSVm1xSGRDMmE3RDFJc3lYTEpEWGJscGd5YWpIcTBhZDFpZ09nR3Rid1ZlUU5RNTAvWmNwWW1mMitjWHF2ekpBcTREQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["rank"],"name":[1],"type":["fctr"],"align":["left"]},{"label":["sex"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["yrs.since.phd_fn1"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["yrs.service_fn1"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["yrs.since.phd_fn2"],"name":[5],"type":["int"],"align":["right"]},{"label":["yrs.service_fn2"],"name":[6],"type":["int"],"align":["right"]}],"data":[{"1":"AsstProf","2":"Female","3":"5.636364","4":"2.545455","5":"11","6":"6"},{"1":"AsstProf","2":"Male","3":"5.000000","4":"2.339286","5":"11","6":"5"},{"1":"AssocProf","2":"Female","3":"15.500000","4":"11.500000","5":"26","6":"24"},{"1":"AssocProf","2":"Male","3":"15.444444","4":"12.037037","5":"49","6":"53"},{"1":"Prof","2":"Female","3":"23.722222","4":"17.111111","5":"39","6":"36"},{"1":"Prof","2":"Male","3":"28.633065","4":"23.229839","5":"56","6":"60"}],"options":{"columns":{"min":{},"max":[10],"total":[6]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2hhcHRlciA3IC0gQmFzaWMgU3RhdGlzdGljcyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3IgaW5zdGFsbH0KaW5zdGFsbC5wYWNrYWdlcyhjKCJIbWlzYyIsICJwYXN0ZWNzIiwgInBzeWNoIikpCgpgYGAKCgpgYGB7ciBsb2FkfQojbGFvZCBidWlsdCBpbiBkYXRhc2V0LgpkYXRhKG10Y2FycykKbGlicmFyeShIbWlzYykKbGlicmFyeShwc3ljaCkKbGlicmFyeShwYXN0ZWNzKQpgYGAKCgpgYGB7cn0KbXl2YXJzIDwtIGMoIm1wZyIsICJocCIsICJ3dCIpCmhlYWQobXRjYXJzW215dmFyc10pCmBgYAoKYGBge3J9CnN1bW1hcnkobXRjYXJzW215dmFyc10pCmBgYAoKYGBge3J9Cm15c3RhdHMgPC0gZnVuY3Rpb24oeCwgbmEub21pdD1GQUxTRSkgewogIGlmKG5hLm9taXQpCiAgICB4IDwtIHhbIWlzLm5hKHgpXQogIG0gPC0gbWVhbih4KQogIG4gPC0gbGVuZ3RoKHgpCiAgcyA8LSBzZCh4KQogIHJldHVybihjKG49biwgbWVhbj1tLCBzdGRldj1zKSkKfQoKc2FwcGx5KCBtdGNhcnNbbXl2YXJzXSwgbXlzdGF0cykKYGBgCgpgYGB7cn0KI2Zyb20gSG1pc2MgLSBzZWVpbmcgbWVzc2FnZXMgaXQncyAibWFza2VkIgpIbWlzYzo6ZGVzY3JpYmUobXRjYXJzW215dmFyc10pCmBgYAoKIyMjIFN1bW1hcnkgc3RhdHMgYnkgZ3JvdXAKClJlbWluZHMgbWUgb2YgIkdST1VQIEJZIiBpbiBTUUwuIAoKYGBge3J9CmRzdGF0cyA8LSBmdW5jdGlvbih4KSBzYXBwbHkoeCwgbXlzdGF0cykKYnkobXRjYXJzW215dmFyc10sIG10Y2FycyRhbSwgZHN0YXRzKQpgYGAKCmBgYHtyfQpkc3RhdHMgPC0gZnVuY3Rpb24oeCkgc2FwcGx5KHgsIG15c3RhdHMsIG5hLm9taXQ9VFJVRSkKYnkobXRjYXJzW215dmFyc10sIGxpc3QoVHJhbnNtaXNzaW9uPW10Y2FycyRhbSwgRW5naW5lPW10Y2FycyR2cyksIEZVTj1kc3RhdHMpCmBgYAoKIyMjIE1vcmUgZXhwZXJpbWVudGluZyB3aXRoIHNhcHBseQoKYGBge3J9Cmp1c3R0aGVtZWFuIDwtIGZ1bmN0aW9uKHgsIG5hLm9taXQ9RkFMU0UpIHsKICBtZWFuKHgpICNsYXN0IGV4cHJlc3Npb24gYXV0b21hdGljYWxseSByZXR1cm5lZC4KfQoKbW4gPC0gc2FwcGx5KG10Y2FycywganVzdHRoZW1lYW4sIG5hLm9taXQ9VFJVRSkgI3dpbGwgcmV0dXJuIGEgdmVjdG9yLiAKYGBgCgog</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2hhcHRlciA3IC0gQmFzaWMgU3RhdGlzdGljcyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3IgaW5zdGFsbH0KaW5zdGFsbC5wYWNrYWdlcyhjKCJIbWlzYyIsICJwYXN0ZWNzIiwgInBzeWNoIiwgImNhckRhdGEiKSkKCmBgYAoKCmBgYHtyIGxvYWR9CiNsYW9kIGJ1aWx0IGluIGRhdGFzZXQuCmRhdGEobXRjYXJzKQpsaWJyYXJ5KEhtaXNjKQpsaWJyYXJ5KHBzeWNoKQpsaWJyYXJ5KHBhc3RlY3MpCmBgYAoKCmBgYHtyfQpteXZhcnMgPC0gYygibXBnIiwgImhwIiwgInd0IikKaGVhZChtdGNhcnNbbXl2YXJzXSkKYGBgCgpgYGB7cn0Kc3VtbWFyeShtdGNhcnNbbXl2YXJzXSkKYGBgCgpgYGB7cn0KbXlzdGF0cyA8LSBmdW5jdGlvbih4LCBuYS5vbWl0PUZBTFNFKSB7CiAgaWYobmEub21pdCkKICAgIHggPC0geFshaXMubmEoeCldCiAgbSA8LSBtZWFuKHgpCiAgbiA8LSBsZW5ndGgoeCkKICBzIDwtIHNkKHgpCiAgcmV0dXJuKGMobj1uLCBtZWFuPW0sIHN0ZGV2PXMpKQp9CgpzYXBwbHkoIG10Y2Fyc1tteXZhcnNdLCBteXN0YXRzKQpgYGAKCmBgYHtyfQojZnJvbSBIbWlzYyAtIHNlZWluZyBtZXNzYWdlcyBpdCdzICJtYXNrZWQiCkhtaXNjOjpkZXNjcmliZShtdGNhcnNbbXl2YXJzXSkKYGBgCgojIyMgU3VtbWFyeSBzdGF0cyBieSBncm91cAoKUmVtaW5kcyBtZSBvZiAiR1JPVVAgQlkiIGluIFNRTC4gCgpgYGB7cn0KZHN0YXRzIDwtIGZ1bmN0aW9uKHgpIHNhcHBseSh4LCBteXN0YXRzKQpieShtdGNhcnNbbXl2YXJzXSwgbXRjYXJzJGFtLCBkc3RhdHMpCmBgYAoKYGBge3J9CmRzdGF0cyA8LSBmdW5jdGlvbih4KSBzYXBwbHkoeCwgbXlzdGF0cywgbmEub21pdD1UUlVFKQpieShtdGNhcnNbbXl2YXJzXSwgbGlzdChUcmFuc21pc3Npb249bXRjYXJzJGFtLCBFbmdpbmU9bXRjYXJzJHZzKSwgRlVOPWRzdGF0cykKYGBgCgojIyMgTW9yZSBleHBlcmltZW50aW5nIHdpdGggc2FwcGx5CgpgYGB7cn0KanVzdHRoZW1lYW4gPC0gZnVuY3Rpb24oeCwgbmEub21pdD1GQUxTRSkgewogIG1lYW4oeCkgI2xhc3QgZXhwcmVzc2lvbiBhdXRvbWF0aWNhbGx5IHJldHVybmVkLgp9CgptbiA8LSBzYXBwbHkobXRjYXJzLCBqdXN0dGhlbWVhbiwgbmEub21pdD1UUlVFKSAjd2lsbCByZXR1cm4gYSB2ZWN0b3IuIApgYGAKCiMjIyBNZXNzaW5nIHdpdGggJ3N1bW1hcml6ZScKCmBgYHtyfQpsaWJyYXJ5KGRwbHlyKQpsaWJyYXJ5KGNhckRhdGEpCmBgYAoKYGBge3J9ClNhbGFyaWVzICU+JQogIHN1bW1hcmlzZShtZWQgPSBtZWRpYW4oc2FsYXJ5KSwKICAgICAgICAgICAgbWluID0gbWluKHNhbGFyeSkpCmBgYAogCmBgYHtyfQpTYWxhcmllcyAlPiUKICBncm91cF9ieShyYW5rLCBzZXgpICU+JQogIHNlbGVjdCh5cnMuc2luY2UucGhkLCB5cnMuc2VydmljZSkgJT4lCiAgc3VtbWFyaXplX2FsbChsaXN0KG1lYW4sIG1heCkpCmBgYAogCiA=</div>
 
 
 
