@@ -5,6 +5,7 @@ output: html_notebook
 
 ```{r install}
 install.packages(c("Hmisc", "pastecs", "psych", "carData"))
+install.packages(c("vcd"))
 
 ```
 
@@ -87,6 +88,27 @@ Salaries %>%
   group_by(rank, sex) %>%
   select(yrs.since.phd, yrs.service) %>%
   summarize_all(list(mean, max))
+```
+ 
+ ### Frequency and Contingency
+ 
+```{r}
+library(vcd)
+```
+```{r}
+head(Arthritis)
+```
+ 
+```{r}
+mytable <- with(Arthritis, table(Improved))
+# same as
+# table(Arthritis$Improved)
+prop.table(mytable) #freq -> proportions
+```
+ 
+```{r}
+#contingency table from formula
+xtabs(~ Treatment+Improved, data=Arthritis)
 ```
  
  
