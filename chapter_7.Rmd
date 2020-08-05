@@ -108,7 +108,35 @@ prop.table(mytable) #freq -> proportions
  
 ```{r}
 #contingency table from formula
-xtabs(~ Treatment+Improved, data=Arthritis)
+tvi <- xtabs(~ Treatment+Improved, data=Arthritis)
+```
+ 
+```{r}
+prop.table(tvi)
+```
+ 
+```{r}
+margin.table(tvi, 1)
+```
+ 
+```{r}
+margin.table(tvi, 2)
+```
+ 
+ ### Chi-Squared Test
+
+Testing for independence of categorical variables. 
+ 
+```{r}
+#treatment vs improved. 
+chisq.test(tvi)
+# note the p-value (chance of observing this association if the null hypothesis holds) is very low. 
+```
+ 
+```{r}
+svi <- xtabs(~ Sex + Improved, data=Arthritis)
+chisq.test(svi)
+# less of a relationship but still some evidence of association. 
 ```
  
  
