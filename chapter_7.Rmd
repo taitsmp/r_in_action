@@ -16,6 +16,7 @@ data(mtcars)
 library(Hmisc)
 library(psych)
 library(pastecs)
+library(MASS)
 ```
 
 
@@ -138,5 +139,13 @@ svi <- xtabs(~ Sex + Improved, data=Arthritis)
 chisq.test(svi)
 # less of a relationship but still some evidence of association. 
 ```
- 
+
+### t-tests
+
+Compare two groups coded in one factor (the independent variable)
+
+```{r}
+t.test(Prob ~ So, data=UScrime)
+```
+
  
