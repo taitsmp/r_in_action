@@ -142,10 +142,26 @@ chisq.test(svi)
 
 ### t-tests
 
-Compare two groups coded in one factor (the independent variable)
+Compare two groups coded in one factor (the independent variable).  Works with continuous outcome / dependent variable. 
 
 ```{r}
 t.test(Prob ~ So, data=UScrime)
 ```
 
+Dependent T-test
+
+A dependent t-test assumes that the difference between groups is normally distributed. 
+
+```{r}
+head(UScrime[c('U1', 'U2')])
+```
+
+```{r}
+sapply(UScrime[c("U1","U2")], function(x)(c(mean=mean(x),sd=sd(x))))
+```
+ 
+```{r}
+with(UScrime, t.test(U1, U2, paired=TRUE))
+```
+ 
  
