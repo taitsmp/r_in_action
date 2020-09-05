@@ -17,6 +17,7 @@ library(Hmisc)
 library(psych)
 library(pastecs)
 library(MASS)
+library(dplyr)
 ```
 
 
@@ -162,6 +163,18 @@ sapply(UScrime[c("U1","U2")], function(x)(c(mean=mean(x),sd=sd(x))))
  
 ```{r}
 with(UScrime, t.test(U1, U2, paired=TRUE))
+```
+ 
+ Wilcox Test
+ 
+```{r}
+#with and by still confuse me. 
+with(UScrime, by(Prob, So, median))
+```
+ 
+```{r}
+UScrime %>%
+  wilcox.test(Prob ~ So, data=.)
 ```
  
  
